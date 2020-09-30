@@ -8,7 +8,7 @@
 </form>
 
 <div *ngIf="searchForm.valid && !(listOfTables.length > 0)">
-  <p class="message">There are not results</p>
+  <p class="alert alert-danger alert-message" role="alert">There are not results</p>
 </div>
 <ul class="list-group">
   <li *ngFor="let table of listOfTables" class="list-group-item">
