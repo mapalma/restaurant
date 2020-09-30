@@ -1,0 +1,14 @@
+@import './variables.scss';
+
+.zone {
+  height: 240px;
+  background-color:$color-secondary;
+  transition: 0.3s ease-in all;
+
+  svg {
+    &:hover,
+    &:focus {
+      outline: darken($color-secondary, 20%) auto 2px;
+    }
+  }
+}

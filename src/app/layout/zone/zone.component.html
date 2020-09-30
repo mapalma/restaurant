@@ -1,0 +1,8 @@
+<div class="zone">
+  <svg height="240px" width="100%">
+    <g id="scene" #scene>
+      <circle *ngFor="let table of tables" [attr.cx]="table.x + 25" [attr.cy]="table.y + 25 " r="25"
+        [attr.fill]="fillColor" />
+    </g>
+  </svg>
+</div>

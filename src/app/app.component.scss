@@ -1,0 +1,10 @@
+@import "./variables.scss";
+
+.container-layout,
+.container-app {
+  background-color: $color-white;
+}
+
+.container-search {
+  background-color: $color-primary;
+}

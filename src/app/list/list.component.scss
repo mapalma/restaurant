@@ -1,0 +1,38 @@
+@import "./variables.scss";
+
+.form-light {
+  color: $color-white;
+  input {
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(darken($color-primary, 15%), 0.3);
+      border-color: $color-primary;
+    }
+  }
+  .text-muted {
+    color: $color-white !important;
+  }
+}
+
+.message {
+  color: $color-white;
+}
+
+.list-group {
+  .list-group-item {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba($color-white, 0.2);
+    border-radius: 0;
+    padding: 0.5rem 0.75rem;
+
+    .popover-revealer {
+      color: $color-white;
+      text-decoration: none;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        color: $color-text;
+      }
+    }
+  }
+}

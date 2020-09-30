@@ -1,0 +1,18 @@
+<form [formGroup]="searchForm">
+  <div class="form-group form-light">
+    <label for="search">Search</label>
+    <input formControlName="search" #searchText type="text" class="form-control" id="search"
+      aria-describedby="emailHelp">
+    <small id="searchHelp" class="form-text text-muted">Type a search text</small>
+  </div>
+</form>
+
+<div *ngIf="searchForm.valid && !(listOfTables.length > 0)">
+  <p class="message">There are not results</p>
+</div>
+<ul class="list-group">
+  <li *ngFor="let table of listOfTables" class="list-group-item">
+    <a class="popover-revealer" [popoverTitle]="table.name" ngbPopover="{{'Zona ' + table.id_zone}}"
+      placement="right">{{table.name}}</a>
+  </li>
+</ul>

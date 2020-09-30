@@ -1,0 +1,9 @@
+<div class="card container-floor">
+  <div class="card-body">
+    <h3 class="card-title">Floor: {{floor.name}}</h3>
+    <div *ngFor="let zone of zones" class="floor">
+      <h4 class="h4">Zone: {{zone.name}}</h4>
+      <app-zone [zoneId]="zone.id_zone" class="zone"></app-zone>
+    </div>
+  </div>
+</div>
